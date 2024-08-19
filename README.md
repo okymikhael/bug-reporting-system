@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Bug Tracker Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple bug tracking application built with React. It allows users to log in, view a list of bugs, see details of individual bugs, add new bugs, and edit existing bugs.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Login/Logout**: Users can log in with a username and password.
+- **View Bugs**: Users can view a list of bugs with details such as title, severity, status, date, assignee, and description.
+- **Bug Details**: Users can view detailed information about a specific bug.
+- **Add Bug**: Users can add a new bug to the list.
+- **Edit Bug**: Users can edit the details of an existing bug.
 
-### `npm start`
+## Components
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Navbar**: Displays the navigation bar with login/logout options.
+- **BugList**: Displays a list of bugs.
+- **BugDetails**: Displays detailed information about a specific bug.
+- **NewTicket**: Form to add a new bug.
+- **EditBug**: Form to edit an existing bug.
+- **LoginForm**: Form to log in.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js and npm installed on your machine.
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/your-username/bug-tracker.git
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd bug-tracker
+    ```
+3. Install the dependencies:
+    ```sh
+    npm install
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Running the Application
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Start the development server:
+    ```sh
+    npm start
+    ```
+2. Open your browser and navigate to `http://localhost:3000`.
 
-### `npm run eject`
+## Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```plaintext
+src/
+├── components/
+│   ├── Navbar.js
+│   ├── BugList.js
+│   ├── BugDetails.js
+│   ├── NewTicket.js
+│   ├── EditBug.js
+│   └── LoginForm.js
+├── styles.css
+└── App.js
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Login**: Use the credentials provided in the `users` array in `App.js`.
+- **Navigate**: Use the navigation bar to switch between different pages.
+- **Add/Edit Bugs**: Use the forms provided to add or edit bugs.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## License
 
-## Learn More
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Acknowledgments
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

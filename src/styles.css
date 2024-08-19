@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .navbar-left, .navbar-right {
+    display: flex;
+  }
+  
+  .navbar a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover, .navbar a.active {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .bug-list, .bug-details, .new-ticket, .edit-bug, .login-form {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .bug-item, .comment {
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .bug-meta, .comment-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 5px;
+  }
+  
+  .severity {
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-weight: bold;
+  }
+  
+  .severity-high { background-color: #F44336; }
+  .severity-medium { background-color: #FF9800; }
+  .severity-low { background-color: #4CAF50; }
+  
+  .bug-description, .comment-content {
+    margin-bottom: 10px;
+  }
+  
+  .attachments {
+    margin-bottom: 20px;
+  }
+  
+  .attachment {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .attachment img {
+    max-width: 200px;
+    border-radius: 4px;
+  }
+  
+  .attachment .remove-attachment {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(255, 0, 0, 0.7);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .new-comment, .new-ticket form, .edit-bug form, .login-form form {
+    margin-top: 20px;
+  }
+  
+  textarea, input[type="text"], input[type="password"], select {
+    width: 100%;
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    border-radius: 4px;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  button, .file-upload label {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  button:hover, .file-upload label:hover {
+    background-color: #45a049;
+  }
+  
+  .file-upload input[type="file"] {
+    display: none;
+  }
+  
+  #file-list {
+    margin-top: 10px;
+  }
+  
+  #file-list .file-item {
+    background-color: #2a2a2a;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+  }
+  
+  .edit-button {
+    background-color: #2196F3;
+    margin-top: 20px;
+  }
+  
+  .edit-button:hover {
+    background-color: #1976D2;
+  }
+  
+  #login-status {
+    margin-right: 10px;
+  }
